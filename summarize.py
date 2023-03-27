@@ -4,7 +4,7 @@ import os
 import openai
 import time
 
-Language = "English"
+
 def extract_audio(url, output_path):
     youtube = pytube.YouTube(url)
     video = youtube.streams.filter(only_audio=True).first()
@@ -116,14 +116,7 @@ def main(url):
             summary = chat_gpt_response(transcription)
             combined_summary += summary + '\n\n'
 
-        #os.remove(audio_file)
-
-    #os.remove(audio_path)
     return combined_summary
-
-if __name__ == "__main__":
-    main()
-
 
 if __name__ == "__main__":
     main()
