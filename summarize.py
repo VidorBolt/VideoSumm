@@ -91,7 +91,7 @@ def split_audio_file(audio_path, output_path, num_segments):
     return audio_files
 
 def main(url):
-    openai_api_key = "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"
+    openai_api_key = "Key"
     whisper_model = "whisper-1"
     output_path = r"C:\Users\ahmad\PycharmProjects\ChatGpt"
     audio_path = output_path + r'\audio.mp3'
